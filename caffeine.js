@@ -1,16 +1,10 @@
 
 const commandKey = new KeyboardEvent("keypress", {
-    // code: 91
-    // code: "right-command key"
-    code: "OSRight"
-    // code: 'kVK_Command'
-    // code: 'kVK_CapsLock'
-    // code: '0x003A'
-});// as KeyboardEventInit);
+    // code: "MetaRight"
+    code: "CapsLock"
+});// as KeyboardEventInit); // for typescript support
 
 function dis() {
-    // console.log(commandKey);
-    // console.log(commandKey.code);
     dispatchEvent(commandKey);
 }
 window.addEventListener("keydown", function(event) {
@@ -20,5 +14,6 @@ window.addEventListener("keydown", function(event) {
     console.log(str);
   }, true);
 
-// setInterval(dis, 2000);
+setInterval(dis, 2000); // every 2 seconds for debugging
+// setInterval(dis, 270000); // every 4.5 minutes
 
