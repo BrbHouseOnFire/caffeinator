@@ -1,7 +1,7 @@
 
 const commandKey = new KeyboardEvent("keypress", {
-    // code: "MetaRight"
-    code: "CapsLock"
+    code: "MetaRight"
+    // code: "CapsLock"
 });// as KeyboardEventInit); // for typescript support
 
 function dis() {
@@ -15,6 +15,7 @@ window.addEventListener("keydown", function(event) {
     console.log(str);
   }, true);
 
-setInterval(dis, 2000); // every 2 seconds for debugging
-// setInterval(dis, 270000); // every 4.5 minutes
+// setInterval(dis, 2000); // every 2 seconds for debugging
+// setInterval(dis, 270000); // every 4.5 minutes for ss
+setInterval(dis, 60000); // every minute
 
