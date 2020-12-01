@@ -6,6 +6,7 @@ const commandKey = new KeyboardEvent("keypress", {
 
 function dis() {
     dispatchEvent(commandKey);
+    console.log("dispatched");
 }
 window.addEventListener("keydown", function(event) {
     let str = "KeyboardEvent: key='" + event.key + "' | code='" +
