@@ -1,2 +1,2 @@
 # caffeinator
-manually trigger keypresses to prevent a work machine from sleeping
+manually trigger keypresses to prevent a machine from sleeping
